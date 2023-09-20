@@ -10,20 +10,23 @@ public class HelloWorld
         int k = 10;
         int a = 0;
         int b = 0;
-        while (i < 15) {
-            System.out.println("i is " + i + " but is less than 15");
+        do {
+            System.out.println("This loop will run as long as i<15");
             i += 1;
-        }
-        while (k > 5) {
-            System.out.println("k is " + k + " but is greater than 5");
+        } while (i < 15);
+        k = 10;
+        do { 
+            System.out.println("This loop will run as long as k>5");
             k--;
-        }
-        while (a < 10 && b <= 20) {
-            System.out.println("a is " + a + " but is less than 10");
-            System.out.println("b is " + b + " but is less than or equal to 20");
+        } while (k > 5);
+        a = 0;
+        b = 0;
+        do {
+            System.out.println("This loop will run as long as a<10");
+            System.out.println("This loop will run as long as b<=20");
             a++;
             b++;
-        }
+        } while (a < 10 && b <= 20);
     }
     
     
